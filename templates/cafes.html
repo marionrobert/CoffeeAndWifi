@@ -4,7 +4,7 @@
     <link href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet">
 {% endblock %}
 
-{% block title %}Restaurants{% endblock %}
+{% block title %}Cafes{% endblock %}
 
 {% block content %}
 
@@ -17,27 +17,23 @@
 	  <table class="table">
           <thead>
             <tr>
-                <th scope="col">{{cafes[0][0]}}</th>
-                <th scope="col">{{cafes[0][1]}}</th>
-                <th scope="col">{{cafes[0][2]}}</th>
-                <th scope="col">{{cafes[0][3]}}</th>
-                <th scope="col">{{cafes[0][4]}}</th>
-                <th scope="col">{{cafes[0][5]}}</th>
-                <th scope="col">{{cafes[0][6]}}</th>
+                {% for item in cafes[0] %}
+                    <th scope="col">{{ item }}</th>
+                {% endfor %}
             </tr>
           </thead>
           <tbody>
-            {% for cafe in cafes[1:] %}
-            <tr>
-                <td>{{cafe[0]}}</td>
-                <td>{{cafe[1]}}</td>
-                <td>{{cafe[2]}}</td>
-                <td>{{cafe[3]}}</td>
-                <td>{{cafe[4]}}</td>
-                <td>{{cafe[5]}}</td>
-                <td>{{cafe[6]}}</td>
-            </tr>
-            {% endfor %}
+            {% for row in cafes[1:] %}
+	        <tr>
+                {% for item in row %}
+                    {% if item[0:4] == "http" %}
+                    <td><a href="{{ item }}" target="_blank">Maps Link</a></td>
+                    {% else %}
+                    <td>{{ item }}</td>
+                    {% endif %}
+                {% endfor %}
+	        </tr>
+	        {% endfor %}
           </tbody>
   	  </table>
 
