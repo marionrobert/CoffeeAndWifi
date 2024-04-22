@@ -5,7 +5,7 @@ Ce projet consiste à créer une application web simple permettant aux utilisate
 
 ## Fonctionnalités
 - Affiche la liste des cafés ajoutés avec leurs informations correspondantes.
-- - Permet aux utilisateurs d'ajouter de nouveaux cafés avec des détails spécifiques.
+- Permet aux utilisateurs d'ajouter de nouveaux cafés avec des détails spécifiques.
 
 ## Exigences
 - Python 3.x
