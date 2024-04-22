@@ -23,8 +23,11 @@ Ce projet consiste à créer une application web simple permettant aux utilisate
 
 ## Utilisation
 1. Accédez à l'URL fournie par Flask dans votre navigateur.
-2. Sur la page d'accueil, vous pouvez naviguer vers la page d'ajout de café pour soumettre de nouvelles entrées.
-3. Les cafés ajoutés sont affichés sur la page principale avec leurs détails.
+2. Sur la page d'accueil, vous pouvez naviguer vers la page qui liste les cafés les détails des cafés déjà enregistrés.
+3. Depuis la page de visionnage de tous le scafés, vous pouvez naviguer vers l'accueil ou vers la page d'ajout de café pour soumettre de nouvelles entrées.
+4. Sur la page d'ajout d'un nouveeau café, vous pouvez remplir les champs du fomrulaire pour enregistrer un nouveua café.
+   - concernant le champ "URL" : vous devez renseigner le lien de partage du lieu (ne comprenant pas de ","): ![image](https://github.com/marionrobert/CoffeeAndWifi/assets/107509668/88e29744-9d54-4610-8ec4-a22d7b5bcf77)
+
 
 ## Structure du Projet
 - `main.py`: Le script principal de l'application Flask.
