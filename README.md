@@ -1,3 +1,5 @@
+(english below)
+
 # Application de Collecte de Données de Cafés
 
 ## Introduction
@@ -51,3 +53,58 @@ Ce projet consiste à créer une application web simple permettant aux utilisate
 - Assurez-vous de configurer les variables d'environnement et les chemins appropriés selon votre configuration système.
 - Assurez-vous que la version de Chrome WebDriver utilisée est compatible avec la version de Chrome installée sur votre système.
 - Ce projet a été réalisé dans le cadre du cours [100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/) d'Angela Yu sur la plateforme Udemy.
+
+---
+---
+# Coffee Data Collection Application
+
+## Introduction
+This project aims to create a simple web application allowing users to add information about cafes, such as the cafe name, location on Google Maps, opening and closing hours, as well as ratings on coffee quality, Wi-Fi strength, and availability of electrical outlets. The data is stored in a CSV file (`cafe-data.csv`) acting as a simulated database.
+
+## Features
+- Displays the list of added cafes with their corresponding details.
+- Allows users to add new cafes with specific details.
+
+## Requirements
+- Python 3.x
+- Flask: This project uses Flask as the web framework for Python.
+- Flask-Bootstrap: HTML templates use Flask-Bootstrap for integrated Bootstrap features.
+- Flask-WTF, WTForms: form management in the application
+
+## Installation and Configuration
+1. Make sure you have Python installed on your system.
+2. Install required packages using pip and the `requirements.txt` file: `pip install -r requirements.txt`.
+3. Place the template files (`add.html`, `cafes.html`, `index.html`) in a directory named `templates`.
+4. Make sure you have Google Chrome installed on your system.
+5. Download the Chrome WebDriver compatible with your Chrome browser version and configure the environment variable `CHROME_DRIVER_PATH` with the path to the WebDriver executable.
+6. Run the `main.py` script to start the Flask application.
+
+## Usage
+1. Access the URL provided by Flask in your browser.
+2. On the homepage, you can navigate to the page listing cafes and their details.
+3. From the cafes viewing page, you can navigate back to the homepage or to the add cafe page to submit new entries.
+4. On the add cafe page, fill in the form fields to save a new cafe entry.
+   - Regarding the "URL" field: you need to provide the place sharing link (excluding commas): ![image](https://github.com/marionrobert/CoffeeAndWifi/assets/107509668/88e29744-9d54-4610-8ec4-a22d7b5bcf77)
+
+## Project Structure
+- `main.py`: The main script of the Flask application.
+- `templates/`: Directory containing HTML files for web pages.
+    - `add.html`: Cafe addition form.
+    - `cafes.html`: Display of the list of cafes.
+    - `index.html`: Homepage.
+- `cafe-data.csv`: Simulated CSV file acting as a database to store cafe information entered by users when adding a new cafe.
+- `requirements.txt`: File containing the list of required Python packages for the application.
+
+## Interfaces
+### index.html
+![image](https://github.com/marionrobert/CoffeeAndWifi/assets/107509668/a334f035-dad9-456d-bf48-582085f08989)
+### cafes.html
+![image](https://github.com/marionrobert/CoffeeAndWifi/assets/107509668/a443800e-efe5-4323-a5ae-e2861352bc58)
+### add.html
+![image](https://github.com/marionrobert/CoffeeAndWifi/assets/107509668/9d86f45d-7611-4cf8-971e-6207d029caba)
+
+## Notes
+- Ensure to configure environment variables and paths correctly according to your system configuration.
+- Make sure the version of Chrome WebDriver used is compatible with the Chrome version installed on your system.
+- This project was completed as part of the [100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/) course by Angela Yu on the Udemy platform.
+
